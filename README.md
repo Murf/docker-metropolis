@@ -1,8 +1,8 @@
-# docker-osgrid
+# docker-metropolis
 
 FORKED FROM https://github.com/QuantumObject/docker-opensimulator
 
-Docker container for [OSgrid OpenSimulator][3]
+Docker container for [Metropolis Grid OpenSimulator][3]
 
 "OpenSimulator is an open source multi-platform, multi-user 3D application server. It can be used to create a virtual environment (or world) which can be accessed through a variety of clients, on multiple protocols. It also has an optional facility (the Hypergrid) to allow users to visit other OpenSimulator installations across the web from their 'home' OpenSimulator installation. In this way, it is the basis of a nascent distributed Metaverse."
 
@@ -21,11 +21,11 @@ To install docker in Ubuntu 14.04 use the commands:
 
 To run container use the command below:
 
-    $ docker run -d --name docker-osgrid -p 9000:9000 -p 9000:9000/udp murf66/docker-osgrid:16.04
+    $ docker run -d --name docker-metropolis -p 9000:9000 -p 9000:9000/udp murf66/docker-metropolis
  
 ## For the first configuration :
 
-     $ docker exec -it docker-osgrid after_install.sh
+     $ docker exec -it docker-metropolis after_install.sh
 
 Them respond the questions relate to virtual word : 
 
@@ -33,7 +33,7 @@ Them respond the questions relate to virtual word :
 
  - RegionUUID [29923331-dddd-4acc-a3d8-46d3c129b6e3]:     ==> press enter key to keep the same.
 
- - Region Location [1000,1000]:                           ==> get a location from http://www.osgrid.org/index.php/opencoordinates
+ - Region Location [1000,1000]:                           ==> get a location from https://metropolis.hypergrid.org/metrotools/freecoords.php
 
  - Internal IP address [0.0.0.0]:                         ==> press enter key to keep the same.
 
@@ -45,11 +45,11 @@ Them respond the questions relate to virtual word :
 
  - New estate name [My Estate]:     ==> press enter or change it. 
 
- - Estate owner first name [Test]:  ==> use your osgrid firstname
+ - Estate owner first name [Test]:  ==> use your metropolis firstname
 
- - Estate owner last name [User]:   ==> use your osgrid lastname
+ - Estate owner last name [User]:   ==> use your metropolis lastname
 
- - Password:                       ==> use your osgrid password
+ - Password:                       ==> use your metropolis password
 
  - Email:                          ==> ..... 
 
@@ -88,7 +88,7 @@ For additional info about us and our projects check our site [www.quantumobject.
 
 [1]:http://www.opensimulator.org/
 [2]:https://www.docker.com
-[3]:http://www.osgrid.org/index.php/downloads
+[3]:https://hypergrid.org/
 [4]:http://docs.docker.com
 [5]:https://github.com/QuantumObject/docker-opensimulator
 [6]:http://wiki.kokuaviewer.org/wiki/Imprudence:Downloads

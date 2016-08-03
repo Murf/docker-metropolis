@@ -32,7 +32,6 @@ COPY pre-conf.sh /sbin/pre-conf
 RUN chmod +x /sbin/pre-conf ; sync \
     && /bin/bash -c /sbin/pre-conf \
     && rm /sbin/pre-conf
-#ADD osgrid.tgz /opt/opensim/
 
 #Script to execute after install done and/or to create initial configuration
 COPY after_install.sh /sbin/after_install.sh
@@ -46,3 +45,4 @@ EXPOSE 9000/udp
 
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
+
